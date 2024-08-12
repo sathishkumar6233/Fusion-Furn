@@ -232,7 +232,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const phone = document.getElementById('phone').value;
 
     // Define regular expressions
-    const usernameRegex = /^[a-zA-Z0-9_]{3,15}$/; // Alphanumeric and underscores, 3 to 15 characters
+    const usernameRegex = /^[a-zA-Z]{3,15}$/; // Alphanumeric and underscores, 3 to 15 characters
     const emailRegex = /^[^\s@]+@[^\s@]+\.*[^\s@]+$/; // Basic email pattern
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Minimum 8 characters, 1 uppercase, 1 number
     const phoneRegex = /^\d{10}$/; // 10 digits
